@@ -32,4 +32,4 @@ float y = (float)iy;
 ```
 
 **Comparison**
-[![comparison](/images/hud_blur-scale_fix_comparison.png)](/images/hud_blur-scale_fix_comparison.png)
+<br/>[![comparison](/images/hud_blur-scale_fix_comparison.png)](/images/hud_blur-scale_fix_comparison.png)
