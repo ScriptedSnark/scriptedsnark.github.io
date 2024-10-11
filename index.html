@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HL1/2 Verifier Leaderboard</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel='icon' sizes='192x192' href='purplecup.png'>
+</head>
+<body style="background-color: rgba(25,25,25,255);">
+	<style type="text/css">
+		@font-face {
+    font-family: 'verdana';
+    src: url('Verdana.woff2') format('woff2'),
+         url('Verdana.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+		#table{
+			font-size: 500%;
+			font-family: verdana;
+			background-color: #202020;
+			color: #FF8C00;
+			table-layout: auto;
+			width: 100%;
+			border-collapse: collapse;
+		}
+		h1{text-align:center;}
+		h3{text-align:center;}
+		td{
+			border: 5px solid #303030;
+			padding: 10px;
+		}
+	</style>
+	<h1 style="color: darkorange; font-family:verdana">HL1/2 Verifier Leaderboard</h1>
+	<div id="board">
+		<h3 id="warning" style="color: darkorange; font-family:verdana">team quadrazip</h2>
+		<table id="table">
+		</table>
+	</div>
+	
+	<script type="text/javascript" src="showStats.js"></script>
+	<button id="HL1Table" class="button" style="color: #FF8C00;">Half-Life 1</button>
+	<button id="HL1CETable" class="button" style="color: #FF8C00;">Half-Life 1 Category Extensions</button>
+	<button id="HL2Table" class="button" style="color: #FF8C00;">Half-Life 2</button>
+	<button id="HL2CETable" class="button" style="color: #FF8C00;">Half-Life 2 Category Extensions</button>
+</body>
+
+</html>
