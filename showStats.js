@@ -25,7 +25,7 @@ const ids = [
 	"ok6q991g", //HL2
 	"y65gk8de" //HL2CE
 ];
-document.getElementById("warning").innerHTML = "Select a game to view its leaderboards. Loading might take a couple of seconds..";
+document.getElementById("warning").innerHTML = "Выбери нужную игру, чтобы просмотреть её таблицу модераторов. Загрузка может продлиться пару секунд..";
 window.onload = function() {
 	let HL1Board = document.querySelector("#HL1Table");
 	HL1Board.onclick = () => {
