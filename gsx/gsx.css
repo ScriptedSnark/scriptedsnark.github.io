@@ -1,0 +1,131 @@
+.titlebar {
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+nav {
+    padding: 0;
+    list-style: none;
+}
+nav li {
+    border-top: solid 1px #899281;
+    border-left: solid 1px #899281;
+    border-right: solid 1px #292d23;
+    background: #4c5844;
+
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    cursor: pointer;
+}
+nav li a {
+    display: block;
+    padding: 4px 8px;
+    color: white;
+    text-decoration: none;
+    height: 20px;
+}
+nav li a:hover,
+nav li a.selected  {
+    color: #c4b550;
+    text-decoration: none;
+}
+nav li a.selected  {
+    line-height: 20px;
+}
+nav li:has(a.selected)::after {
+    content: '';
+    height: 0px;
+    display: block;
+    border-bottom: solid 2px #4c5844;
+    position: relative;
+    top: 1.5px;
+}
+
+.tab {
+    border-bottom: solid 1px #292d23;
+    border-left: solid 1px #899281;
+    border-right: solid 1px #292d23;
+    border-top: solid 1px #899281;
+    display: none;
+}
+
+.tab:target {
+    display: block;
+}
+
+.attribution {
+    text-align: right;
+    font-size: 10px;
+    font-weight: bold;
+    margin: 5px 0 -5px 0;
+}
+
+table {
+    margin: 12px;
+    text-align: left;
+    font-size: 14px;
+    color: white;
+    border-spacing: 0;
+}
+
+th {
+    font-weight: normal;
+    border-bottom: solid 1px #292d23;
+    border-left: solid 1px #899281;
+    border-right: solid 1px #292d23;
+    border-top: solid 1px #899281;
+    background: #4c5844;
+}
+
+th, td {
+    padding: 0 6px;
+}
+
+tbody {
+    background-color: #3e4637;
+}
+
+body {
+    background-image: url("hl.png");
+}
+
+td img {
+    width: 16px;
+    height: 16px;
+    border: 0;
+    margin: 0 -5px -3px -5px;
+}
+
+td a {
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+
+td a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+tr:hover {
+    background: #958831;
+}
+
+.console {
+    white-space: pre-line;
+    margin: 10px;
+}
+
+.screenshots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.screenshots img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin: 12px;
+    border: solid 2px #7b8484;
+}

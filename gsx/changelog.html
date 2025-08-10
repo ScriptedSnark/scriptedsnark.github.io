@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <title>GSX (Changelog)</title>
+    <link rel=stylesheet type=text/css href="vgui.css/greensteam.css" />
+    <link rel=stylesheet type=text/css href="gsx.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.85" />
+    <script src="gsx.js"></script>
+    <main>
+		<div class="headless no-resize window">
+			<div class="titlebar">GSX</div>
+            <nav>
+                <li><a href="index.html#about">Back</a></li>
+            </nav>
+
+            <div class="tab" id="about">
+
+            <br>
+
+            <pre class="console">
+                <strong>v1.1.0 (plus)</strong>
+
+                Engine:
+                - [sw.dll]: Removed viewmodel FOV limit
+                - [sw.dll]: Increased NUMSTACKEDGES to 14400 from 7200
+                - [sw.dll]: Increased NUMSTACKSURFACES to 4000 from 2000
+                - [sw.dll]: Increased MAXSPANS to 6000 from 3000
+                - [sw.dll]: Increased luxels size to (36 * 36) from (18 * 18)
+                - [sw.dll]: Added additional Sys_Error if lightmap is too large
+                - [hw.dll]: Implemented Xash UV support for studiomodels
+                - [hw.dll]: Implemented skybox texture filter support
+                - [hw.dll]: Increased texture upload limits (1024x512 to 2048x1024 - 640x480 to 1280x960)
+                - [hw.dll]: Increased MAX_GLTEXTURES to 10000
+                - Now `version` prints GSX build number
+                - Fixed some sentence (VOX) issues
+                - Fixed heap corruption during TGA loading
+
+                GameUI:
+                - Implemented HL25 backgrounds support (background_hd) 
+
+                ChromeHTML:
+                - ChromeHTML is now distributed from this GSX update
+                
+            </pre>
+            <pre class="console">
+                <strong>v1.0.1 (plus)</strong>
+                
+                Engine:
+                - Fixed missing newline in version output
+                - [hw.dll] Fixed detail texture crash
+                - Removed annoying assert warning after exiting the game
+                
+                ServerBrowser:
+                - Added blacklist feature
+                
+            </pre>
+
+            <pre class="console">
+                <strong>v1.0.0 (plus)</strong>
+                
+                Engine:
+                - [hw.dll]: Fixed blurry HUD sprites
+                - [hw.dll]: Fixed hardcoded FOV for skybox rendering
+                - [sw.dll]: Fixed net graph not displaying
+                - Fixed Z_Free crash in disabled MP3 playback system
+                - Fixed Unicode display on notify messages
+                - Unlocked FPS during connecting to server
+                - [hw.dll]: Increased AllocBlock limit from 64 to 512 lightmaps
+                
+            </pre>
+            </div>
+            <div class="attribution">
+                This website uses <a href="https://github.com/leonill007/vgui.css">vgui.css</a> (<a href="vgui.css/LICENSE">license</a>)
+            </div>
+
+        </div>
+    </main>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <title>GSX</title>
+    <link rel=stylesheet type=text/css href="vgui.css/greensteam.css" />
+    <link rel=stylesheet type=text/css href="gsx.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.85" />
+    <script src="gsx.js"></script>
+    <main>
+		<div class="headless no-resize window">
+			<div class="titlebar">GSX</div>
+            <nav>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#download">Download</a></li>
+                <li><a href="https://discord.gg/gqNE6gRUhy">Discord</a></li>
+            </nav>
+
+            <div class="tab" id="about">
+                <p>
+                    GoldSrc and its components improvement project.
+                </p>
+                <p>
+                    Based on Steam version of Half-Life, steam_legacy branch (build 8684).
+                </p>
+
+                <h2>Goals</h2>
+                <ul>
+                    <li>Bugfixes, especially critical ones</li>
+                    <li>Adding new QoL features</li>
+                    <li>Improving existing systems</li>
+                    <li>Optimizing</li>
+                    <li>Extending engine limits and its API/SDK</li>
+                </ul>
+
+                <h2>Improvements</h2>
+                <ul>
+                    <li>Unlocked FPS on connecting process</li>
+                    <li>Server blacklist by name or IP</li>
+                    <li>Higher limits: AllocBlock (512), studiomodel textures (1024x1024), etc.</li>
+                    <li>All other changes you can find in changelog <a href="changelog.html">here</a>.</li>
+                </ul>
+
+                <h2>Screenshots</h2>
+                <div class="screenshots">
+                    <img src="screens/version.jpg" alt="Version" />
+                    <img src="screens/blacklist.jpg" alt="Blacklist" />
+                </div>
+            </div>
+
+            <div class="tab" id="download">
+                <p>
+                    You can download the latest version of GSX by using updater.
+                </p>
+
+                <p><img src="screens/updater.png" alt="Updater" /></p>
+                <p><a href="updater/gsx-updater.zip">Download updater</a></p>
+                
+                <p>
+                    You need to extract updater contents to your Half-Life directory.
+                    Then you need to <strong>downgrade your HL to steam_legacy</strong>.
+                </p>
+
+                <p>
+                    After that you can run updater and it will download latest GSX version.
+                    You can also use it to download new versions in the future.
+                </p>
+
+                <p>
+                    Also don't forget about <a href="https://discord.gg/gqNE6gRUhy">Discord server</a>! It's the best way to get notified about new updates, report issues and so on!
+                </p>
+
+                <p> <strong>WARNING:</strong>
+                    GSX is not binary compatible with original engine. This means that plugins/mods that do binary code analysis probably won't work here. 
+                </p>
+            </div>
+
+            <div class="attribution">
+                This website uses <a href="https://github.com/leonill007/vgui.css">vgui.css</a> (<a href="vgui.css/LICENSE">license</a>)
+            </div>
+
+        </div>
+    </main>
+</html>
