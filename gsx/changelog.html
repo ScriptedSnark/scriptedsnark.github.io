@@ -17,6 +17,40 @@
             <br>
 
             <pre class="console">
+                <strong>v1.2.0 (plus) - October 2, 2025</strong>
+
+                Engine:
+                - Implemented PNG snapshots
+                - Implemented PNG backgrounds support for loading screen
+                - Implemented `joinlast` command (join latest server even if you quit)
+                - Implemented `cl_fixmodelinterpolationartifacts` cvar from HL25
+                - Implemented `gl_widescreen_yfov` cvar from HL25
+                - Implemented `cl_check_gamedir` cvar
+                - Increased max sky resolution from 256x256 to 512x512
+                - Fixed possibly uninitialized trace in PM_TraceModel
+                - Fixed WAD files array overflow (new error - too many wad files)
+                - Fixed downloading from FastDL not working after reconnecting
+                - Game won't crash anymore if WAD file doesn't exist
+                - Raw input is now used in every mod, not only official ones
+                - Now only gamestartup.mp3 stops after connecting
+                - Steam API init error is now more detailed
+                - GSX API is now WIP
+
+                GameUI:
+                - Added PNG backgrounds support (MODNAME/resource/background.png)
+                - Added BSP backgrounds support (background.bsp)
+                - Fixed not being able to open VGUI modules in multiple instnaces
+
+                Launcher:
+                - Added update checker (can be disabled with `-noupdatecheck` param)
+                - Changed icon (by @anewnick)
+                - Matched resource info so DPI awareness works from now
+                - Implemented -low, -high, -textmode parameters
+                - Mutex can be now ignored with `-ignoremutex`
+                
+            </pre>
+
+            <pre class="console">
                 <strong>v1.1.1 (plus) - August 12, 2025</strong>
 
                 Engine:
