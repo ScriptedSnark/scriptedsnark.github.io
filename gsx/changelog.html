@@ -15,7 +15,53 @@
             <div class="tab" id="about">
 
             <br>
+            <pre class="console">
+                <strong>v1.4.0 (plus) - March 14, 2026</strong>
 
+                Engine:
+                - Implemented limit adjuster
+                    -- valve/gsp_limits.ini:
+                    -- MAX_TEMP_ENTITIES = 1536
+                    -- MAX_DLIGHTS = 64
+                    -- MAX_ELIGHTS = 64
+                    -- MAX_LIGHTSTYLES = 64
+                    -- MAX_GLTEXTURES = 10000
+                    -- SPR_MAX_SPRITES = 256
+                - Made texture load limits dynamic
+                - GL: Made texture resolution limit dynamic
+                - GL: Implemented `gsx_hud_scale` cvar
+                - GL: Fixed per-frame lightmap reupload in certain cases
+                - GL: Fixed additional HUD sprite deallocation
+                - Software: Fixed TriAPI 2D drawing
+                - Added old font (gfx.wad/fonts.wad) rendering (`-oldfont`)
+                - Added old Quake/WON console (`-oldconsole` + mix with `-oldfont`)
+                - Implemented `cl_showfps 2` (frame time in ms)
+                - Implemented voice recording for demos (for `voice_loopback 0` case)
+                - Restored and fixed `SCR_ConnectMsg`
+                - Fixed double `core.dll` loading
+                - Fixed various center string rendering issues
+                - Fixed incorrect UTF-8 handling in chat (e.g. `"say ТЕСТ"` bug)
+                - Increased character limit for brushmodels
+
+                GameUI:
+                - Implemented `-ui03` parameter (2003 UI look)
+
+                ServerBrowser:
+                - Implemented multigamedir support (without warning dialogs)
+
+                VGUI2:
+                - Fixed blur alpha bug in `vgui2_surfacelib` (by @Kv4sMan)
+
+                Linux:
+                - Launcher: hid symbol visibility
+                - Excluded `vstdlib` from build (using binary from build 8684)
+                - Implemented spray and palette functionality in GameUI
+                - Achieved additional compatibility
+
+                Resources:
+                - Added Russian localization (by @vp24)
+
+            </pre>
             <pre class="console">
                 <strong>v1.3.2 (plus) - February 1, 2026</strong>
 
