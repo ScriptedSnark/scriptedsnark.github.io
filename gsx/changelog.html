@@ -14,7 +14,24 @@
 
             <div class="tab" id="about">
 
-            <br>
+            <pre class="console">
+                <strong>v1.4.2 (plus) - May 8, 2026</strong>
+
+                Engine:
+                - Software: Fixed R_LoadTGA so even taskbar icon will be correct
+                - Fixed another heap corruption during bad internet connection
+                - Reverted SDL input changes, now you need `-userawinput` for 3rd-party mods
+                - Reverted keydown check to fix OpenAG input
+                - Added "fit" token support for background layout
+
+                GameUI:
+                - Applied HL25 changes for DrawBackgroundImage
+
+                ServerBrowser:
+                - Ignored "type" key while parsing mod list
+                
+            </pre>
+
             <pre class="console">
                 <strong>v1.4.1 (plus) - April 25, 2026</strong>
 
@@ -31,6 +48,9 @@
                 ServerBrowser:
                 - Applied some fixes to multigamedir feature
 
+            </pre>
+            
+            <pre class="console">
                 <strong>v1.4.0 (plus) - March 14, 2026</strong>
 
                 Engine:
