@@ -15,6 +15,53 @@
             <div class="tab" id="about">
 
             <pre class="console">
+                <strong>v1.5.0 (plus) - May 29, 2026</strong>
+
+                Global:
+                - All GSX resource files are now located in `valve_gsx` directory
+                - steam_legacy requirement is no longer necessary
+
+                Engine:
+                - Added `-borderless` alias for `-noborder`
+                - Added internal `FCVAR_READONLY` flag
+                - Added read-only gsx_version cvar
+                - Added Discord Rich Presence integration (supports all official games + AG)
+                - Added Steam Rich Presence integration (available with specific clients)
+                - Added `-lang` launch argument for language forcing (ex. `-lang japanese`)
+                - Added `_gsx` search path as primary basedir/another addon directory
+                - Added support for `UseScaledCreditsFont` resource string
+                - Software: implemented "fit" option for startup graphic
+                - Implemented workaround for svc_bad in demos (active with `developer 1`)
+                - Reverted `-userawinput` launch argument (no need anymore)
+                - Fixed SystemWrapper command forwarder (fixes dem_ commands)
+                - Disabled keyboard input for GameUI panels during active Quake/WON console
+                - Now skybox updates in runtime when `sv_skyname` changes on server-side
+                - Allowed `r_dynamic` in multiplayer
+
+                GameUI:
+                - All GameUI dialogs were scaled with HD proportional feature from HL25
+                - Implemented fallback for HD background loading
+
+                Steam API:
+                - Upgraded to v156 (HL25)
+
+                ServerBrowser:
+                - Added country flags before server name
+                - Fixed "last time played" string construction
+                - Fixed inability to activate game filter with uppercase mod name (gamedir)
+                - Fixed inability to activate game filter with same string start (ex. czero, czeror)
+                - Fixed gamedir filter in filter string 
+                - Current game will be added in any case in game filter
+                - Reduced server refresh interval from 10s to 600ms
+
+                VGUI2:
+                - Fixed scheme reloading in runtime
+                - Implemented HD proportional scaling like in HL25 build
+                - Implemented `-nohdproportional` launch argument
+                
+            </pre>
+
+            <pre class="console">
                 <strong>v1.4.2 (plus) - May 8, 2026</strong>
 
                 Engine:
