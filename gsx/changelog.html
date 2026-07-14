@@ -15,6 +15,69 @@
             <div class="tab" id="about">
 
             <pre class="console">
+                <strong>v1.6.0 (plus) - July 14, 2026</strong>
+
+                Global:
+                - Added turkish localization (thanks to [BLUEStrike5K](https://www.youtube.com/@BLUEStrike5K/featured))
+
+                Linux:
+                - **Upgraded gcc from 4.8 to 9**
+                - Added updater support (going to publish later)
+                - Added TrackerUI (friends) support
+                - Added custom master server support
+                - Implemented SDL2 surface backend for VGUI2
+                - Enabled Discord Rich Presence
+                - Fixed stack smashing in font texture cache
+                - Fixed memory issues in `CLinuxFont`
+
+                Engine:
+                - Added `-picmip` launch argument to restore gl_picmip functionality
+                - Added PNG backgrounds (again, resource/background.png)
+                - Implemented SDR (Steam Datagram Relay) networking from HL25
+                - Implemented `cl_ticket_generator` (from [Xash3D FWGS](https://github.com/FWGS/xash3d-fwgs))
+                **NOTE: you still need to own GoldSrc game you want to play.**
+                - Extended GSX API with `ConsoleColorPrintf` and `DrawSetTextColor`
+                - Reimplemented GSX API as an interface (was a struct)
+                - Made client CRC check exclusive for Win32
+                - config.cfg read-only flag is no longer bypassed
+                - Removed TGA texture resolution limit for VGUI2
+                - Fixed some EAX reverb related bugs
+                - Fixed lightgamma crash in multiplayer
+                - Fixed `R_DrawTorus` buffer overrun
+                - Fixed non-thread-safe console prints in MP3 system
+                - Fixed parsing of `Half-Life_gsx` directory
+                - Fixed game window icon orientation (no longer flipped)
+                - Fixed several Steam RPC issues
+                - Fixed listen server advertising in Steam masterserver
+                - Fixed game crash when WinSock error appears
+                - Software: Fixed GameUI background gap on the left side
+                - Software: Fixed animated logo scaling
+                - Software: implemented drawing funcs for ServerBrowser flags
+
+                GameUI:
+                - Added `gsx_nohdproportional` cvar (replaces `-nohdproportional` launch argument)
+                - Added animated logo from HL25
+                - Enabled bots dialog for Counter-Strike (still requires ReGameDLL)
+                - Reworked launch arguments into a dedicated GSX options dialog (GSX / UI / Renderer / About tabs, STILL WIP)
+                - Most GSX options are now applied dynamically via cvars
+                - Applied HD proportional scaling to CareerUI
+
+                TrackerUI:
+                - Added in-game friends/Tracker UI (thanks to @oxiKKK)
+
+                ServerBrowser:
+                - Added custom masterservers support
+                - Fixed being unable to copy server's IP
+                - Fixed server queries after game restart
+
+                VGUI2:
+                - Finalized HL25 menu (help text, sounds, additive text draw)
+                - Fixed new/delete type mismatch in `ListPanel::DeleteAllItems`
+                - Fixed UP direction for system menu
+                
+            </pre>
+
+            <pre class="console">
                 <strong>v1.5.0 (plus) - May 29, 2026</strong>
 
                 Global:
