@@ -13,7 +13,40 @@
             </nav>
 
             <div class="tab" id="about">
+            <pre class="console">
+                <strong>v1.6.2 (plus) - September 1, 2026</strong>
 
+                SDL:
+                - Now GSX uses SDL3 wrapper. Native port to SDL3 is probably not worth it because can break compatibility with HL mods
+
+                Engine:
+                - Added crash handler
+                - Added `-nosdr` launch argument to force disable Steam Networking
+                - Added error printing in SDL window creation
+                - Added `sv_allow_autoaim` cvar, fixes crash if HL25 game dll is used
+                - Fixed TextMsg print crash during demo playback
+                - Fixed "agstart" problem: basically, game DLL commands don't interrupt your commands on 3rd-party servers
+                - Fixed assert in voice system
+                - Fixed double RandomLong call in R_BloodSprite
+                - Engine won't bring up main menu while watching demo anymore
+                - Ignored background map in both RPC statuses
+
+                GameUI:
+                - Now animated logo hides in-game
+                - Supported `-nosdr` launch argument
+                - Inserted D3D renderer (Win32) placeholder in combobox for future versions
+
+                TrackerUI:
+                - Distributed necessary .res files to actually be able to disable their sounds (friend join/in-game, etc.)
+
+                ServerBrowser:
+                - Implemented own rules query, fixes Steam assert and steamerrorreporter.exe spawn
+                - Added country code column
+                - Reverted servers sorting by name
+                - Fixed not showing Internet servers (appID being 0 fix, broken by recent Steam client update)
+                - Fixed not working "Refresh all" button in some cases
+                
+            </pre>
             <pre class="console">
                 <strong>v1.6.1 (plus) - July 20, 2026</strong>
 
